@@ -318,3 +318,19 @@
 .border-golden-900 {
   border-color: var(--golden-900);
 }
+
+/* === Custom Styles === */
+
+.service:hover {
+  background-color: var(--black-900);
+  transition: all 0.3s ease-in-out;
+}
+
+.service:hover .icon {
+  background-color: white;
+  color: var(--black-900);
+}
+
+.service:hover .desc {
+  color: whitesmoke;
+}
