@@ -1,5 +1,6 @@
 import React from "react";
 import { projects } from "../data";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -19,7 +20,7 @@ export default function Projects() {
                   <img
                     src={project.image}
                     alt={project.estate}
-                    className="w-full h-auto object-cover rounded-sm  hover:scale-105 transition-transform duration-300 "
+                    className="w-full max-h-84 object-cover rounded-sm  hover:scale-105 transition-transform duration-300 "
                   />
                   <div className="absolute bottom-6 left-6 bg-black/60 font-semibold text-white text-lg px-4 py-2 rounded-md flex items-center gap-1">
                     <project.icon className="inline-block" />
@@ -29,9 +30,15 @@ export default function Projects() {
                 <h4 className="text-xl py-6 font-bold mt-3 text-center">
                   {project.estate}
                 </h4>
-                <p className="text-lg text-gray-300 mt-1 text-justify">
+                <p className="text-lg min-h-50 text-gray-300 mt-1 text-justify">
                   {project.desc}
                 </p>
+                <Link
+                  href={project.link}
+                  className="mt-4 bg-golden-50 py-3 px-4 w-full text-center inline-block text-golden-500 font-semibold text-xl"
+                >
+                  Learn More
+                </Link>
               </div>
             ))}
           </div>

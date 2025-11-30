@@ -33,7 +33,8 @@ export const projects = [
     location: "Epe Lagos",
     icon: IoLocationSharp,
     desc: "Located in Imokun Community, Poka-Eredo, Epe Lagos, Hilltop Castle Estate Phase 1 offers 600sqm serviced plots designed for discerning investors. Strategically positioned near key infrastructure like the Lekki-Epe Expressway, Dangote Refinery, Deep Seaport, Alaro City, and the new Lagos International Airport, this estate is primed for exponential growth.",
-    image: "/assets/gateHouse.webp",
+    image: "/assets/hilltopFrontGate.jpg",
+    link: "/pages/hilltop-castle-1",
   },
   {
     estate: "Hilltop Castle Estate Phase 2",
@@ -41,5 +42,6 @@ export const projects = [
     icon: IoLocationSharp,
     desc: "Also situated in Imokun, Phase 2 extends the Hilltop vision with luxury 3-bedroom semi-detached and fully-detached penthouse homes. With elegant designs, BQ options, ample parking, and gated security, it offers modern living in a high-growth environment.",
     image: "/assets/aerial.jpeg",
+    link: "/pages/hilltop-castle-2",
   },
 ];
